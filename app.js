@@ -79,12 +79,12 @@
   /* rail follows the chapter in view; the lead's path draws as you read */
   var stages = $$('.stage');
   var voice = $('#railVoice');
-  function setRail(i) {
+  function setRail(i, el) {
     railBtns.forEach(function (b, k) {
       b.classList.toggle('is-on', k === i);
       if (k === i) { b.setAttribute('aria-current', 'step'); } else { b.removeAttribute('aria-current'); }
     });
-    if (voice && stages[i]) voice.textContent = stages[i].dataset.voice;
+    if (voice && el) voice.textContent = el.dataset.voice;
     moveRailAva(i);
     var on = railBtns[i];
     if (on && on.parentElement.scrollWidth > on.parentElement.clientWidth) {
@@ -93,7 +93,7 @@
   }
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) { if (e.isIntersecting) setRail(+e.target.dataset.stage); });
+      entries.forEach(function (e) { if (e.isIntersecting) setRail(+e.target.dataset.stage, e.target); });
     }, { rootMargin: '-45% 0px -50% 0px' });
     stages.forEach(function (s) { io.observe(s); });
   }
@@ -135,6 +135,7 @@
   /* ---------- rivals ---------- */
   var table = $('#rivalTable');
   function highlight(col) {
+    table.setAttribute('data-sel', col);
     $$('tr', table).forEach(function (tr) {
       $$('th,td', tr).forEach(function (c, k) { c.classList.toggle('hl', k === col); c.classList.toggle('me', k === 4); });
     });
@@ -242,14 +243,28 @@
     { title: 'Pipeline stages', sub: 'Six-stage campaign tracker', kind: 'Stage tracker', src: 'img/stage-tracker.png', what: 'A six-stage tracker shows where a campaign is, in plain words instead of a tool icon.' },
     { title: 'Reporting', sub: 'Funnel, meetings, inbox health', kind: 'Campaign view', src: 'img/d5-campaigns.png', what: 'Campaign results in one place: funnel, meetings and inbox health.' }
   ];
+  /* CRM capabilities as a short table that points back to the decisions, instead of repeating screens */
+  var CAPLINK = ['d2', null, 'd3', 'd4', 'd4', 'd5', 'd5'];
   var caps = $('#caps');
+  caps.className = 'captable';
   CAPS.forEach(function (c, i) {
-    var b = document.createElement('button');
-    b.type = 'button'; b.className = 'cap';
-    b.setAttribute('aria-label', 'Open full size: ' + c.title);
-    b.innerHTML = '<span class="th"><img src="' + c.src + '" alt="" loading="lazy"></span><span class="bd"><b>' + c.title + '</b><span>' + c.sub + '</span><small>' + c.kind + '</small></span>';
-    b.addEventListener('click', function () { openLb(CAPS.map(function (x) { return { src: x.src, title: x.title, text: x.kind + ': ' + x.what }; }), i, b); });
-    caps.appendChild(b);
+    var row = document.createElement('div');
+    row.className = 'caprow';
+    row.innerHTML = '<b>' + c.title + '</b><span>' + c.sub + '</span>';
+    var go;
+    if (CAPLINK[i]) {
+      go = document.createElement('a');
+      go.href = '#' + CAPLINK[i];
+      go.textContent = 'See decision ' + CAPLINK[i].slice(1);
+    } else {
+      go = document.createElement('button');
+      go.type = 'button';
+      go.textContent = 'View screen';
+      go.addEventListener('click', function () { openLb([{ src: c.src, title: c.title, text: c.kind + ': ' + c.what }], 0, go); });
+    }
+    go.className = 'capgo';
+    row.appendChild(go);
+    caps.appendChild(row);
   });
 
   /* ---------- CRM sync concept ---------- */
@@ -303,4 +318,66 @@
     fig.setAttribute('role', 'button');
     fig.setAttribute('aria-label', 'Open screen full size');
   });
+
+  /* ---------- how she works: highlight the step in view ---------- */
+  var wSteps = $$('#walkSteps li'), wMsgs = $$('.chatframe .msg');
+  function setWalk(i) {
+    wSteps.forEach(function (li, k) { li.classList.toggle('on', k === i); });
+    wMsgs.forEach(function (m, k) { m.classList.toggle('on', k === i); });
+  }
+  if ('IntersectionObserver' in window && wMsgs.length) {
+    var wio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) setWalk(+e.target.dataset.w); });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    wMsgs.forEach(function (m) { wio.observe(m); });
+  }
+  setWalk(0);
+
+  /* ---------- reveals, pins and counters ---------- */
+  var revealSel = '.head, .block > h3, .block > .lede, .brief li, .needs > div, .vs, .tablewrap, .persona, .risk, .journey, .flow, .control, .decision, .zones, .iter, .look, .pinned .card, .quotes figure, .takeaway, .funnel li, .caps .cap, .sync, .lessons li, .end .wrap > div';
+  var revealEls = $$(revealSel);
+  revealEls.forEach(function (el) {
+    el.setAttribute('data-reveal', '');
+    var sib = el.parentElement ? Array.prototype.indexOf.call(el.parentElement.children, el) : 0;
+    el.style.setProperty('--d', Math.min(sib, 6) * 0.06 + 's');
+  });
+  function countUp(b) {
+    return; /* static: numbers render final, no count-up */
+    var txt = b.textContent, m = txt.match(/\d+/);
+    if (!m || reduce) return;
+    var target = +m[0], start = null;
+    function step(t) {
+      if (!start) start = t;
+      var p = Math.min(1, (t - start) / 1100), e = 1 - Math.pow(2, -10 * p);
+      b.textContent = txt.replace(m[0], String(Math.round(target * (p === 1 ? 1 : e))));
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if ('IntersectionObserver' in window && !reduce) {
+    var rio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('in');
+        if (e.target.matches('.pinned .card')) countUp($('b', e.target));
+        rio.unobserve(e.target);
+      });
+    }, { rootMargin: '0px 0px -10% 0px' });
+    revealEls.concat($$('.shot')).forEach(function (el) { rio.observe(el); });
+  } else {
+    revealEls.concat($$('.shot')).forEach(function (el) { el.classList.add('in'); });
+  }
+  // v5: user flow tabs
+  var ufTabs = document.getElementById("ufTabs");
+  if (ufTabs) {
+    var ufBtns = ufTabs.querySelectorAll("button");
+    var ufLists = document.querySelectorAll("ol.uflow");
+    ufBtns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var f = b.getAttribute("data-f");
+        ufBtns.forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+        ufLists.forEach(function (l) { l.hidden = l.getAttribute("data-f") !== f; });
+      });
+    });
+  }
 })();

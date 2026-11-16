@@ -11,9 +11,11 @@
 <meta name="theme-color" content="#FFFFFF">
 <link rel="icon" href="img/sarah-bust.png">
 <link rel="preload" href="fonts/Satoshi-Black.otf" as="font" type="font/otf" crossorigin>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=23">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
+<a class="skip" href="#summary">Skip to the case study</a>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
@@ -23,6 +25,31 @@
   <symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 5v14M15 5v14"/></symbol>
   <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></symbol>
   <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l4-1L19 8l-3-3L5 16zM14 7l3 3"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+  <symbol id="i-flow" viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M6 9v4a2 2 0 0 0 2 2h7"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M10 6h10M10 12h10M10 18h10M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v4h4M9 12h6M9 16h6"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13 6l-2 12"/></symbol>
+  <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="M3 10v4h3l8 4V6l-8 4zM18 9a4 4 0 0 1 0 6"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-reply" viewBox="0 0 24 24"><path d="M9 14l-5-5 5-5M4 9h10a6 6 0 0 1 6 6v4"/></symbol>
+  <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></symbol>
+  <symbol id="i-okc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path d="M7 4L3 8l4 4M3 8h14M17 20l4-4-4-4M21 16H7"/></symbol>
+  <symbol id="i-sync" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.5-4.5L4 8M4 4v4h4M4 13a8 8 0 0 0 14.5 4.5L20 16M20 20v-4h-4"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h3M11 7h9M4 17h9M17 17h3"/><circle cx="9" cy="7" r="2"/><circle cx="15" cy="17" r="2"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></symbol>
 </svg>
 
 <header class="top">
@@ -37,14 +64,14 @@
 
 <section class="hero" id="top" aria-labelledby="hero-title">
   <div class="board" aria-hidden="false">
-    <div class="cols" id="heroCols" role="group" aria-label="Sarah's pipeline stages">
-      <div class="lane"><button class="stagebtn" data-i="0" type="button"><i class="magnet"></i>Connect</button></div>
-      <div class="lane"><button class="stagebtn" data-i="1" type="button"><i class="magnet"></i>Capture</button></div>
-      <div class="lane"><button class="stagebtn" data-i="2" type="button"><i class="magnet"></i>Engage</button></div>
-      <div class="lane"><button class="stagebtn" data-i="3" type="button"><i class="magnet"></i>Qualify</button></div>
-      <div class="lane"><button class="stagebtn" data-i="4" type="button"><i class="magnet"></i>Hand off</button></div>
-      <div class="lane"><button class="stagebtn" data-i="5" type="button"><i class="magnet"></i>Measure</button></div>
-      <div class="lane"><button class="stagebtn is-sync" data-i="6" type="button"><i class="magnet"></i>Sync</button></div>
+    <div class="cols" id="heroCols" aria-hidden="true">
+      <div class="lane"><button class="stagebtn" data-i="0" type="button" tabindex="-1"><i class="magnet"></i>Connect</button></div>
+      <div class="lane"><button class="stagebtn" data-i="1" type="button" tabindex="-1"><i class="magnet"></i>Capture</button></div>
+      <div class="lane"><button class="stagebtn" data-i="2" type="button" tabindex="-1"><i class="magnet"></i>Engage</button></div>
+      <div class="lane"><button class="stagebtn" data-i="3" type="button" tabindex="-1"><i class="magnet"></i>Qualify</button></div>
+      <div class="lane"><button class="stagebtn" data-i="4" type="button" tabindex="-1"><i class="magnet"></i>Hand off</button></div>
+      <div class="lane"><button class="stagebtn" data-i="5" type="button" tabindex="-1"><i class="magnet"></i>Measure</button></div>
+      <div class="lane"><button class="stagebtn is-sync" data-i="6" type="button" tabindex="-1"><i class="magnet"></i>Sync</button></div>
     </div>
     <svg class="trail" id="trail" aria-hidden="true"><path id="trailPath" d=""/></svg>
     <p class="mava" id="mava" aria-hidden="true"><i class="pinhead"></i><b>Ava Johnson</b><span id="mavaStage">Engage</span><span id="mavaNote">Email 1 sent</span></p>
@@ -55,11 +82,11 @@
     <h1 id="hero-title">Sarah works the pipeline. <span class="mark">You</span> call it.</h1>
     <p class="sub">I designed Ruh's AI SDR so a sales manager can hand her outbound and still see, steer and take back every lead.</p>
     <div class="cta">
-      <a class="btn primary" href="#brief">Read the case study <svg class="i"><use href="#i-arrow"/></svg></a>
-      <button class="btn ghost" id="playBtn" type="button" aria-pressed="false"><svg class="i" id="playIcon"><use href="#i-play"/></svg><span id="playLabel">Watch Sarah work</span></button>
+      <a class="btn primary" href="#brief">Read the case study <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <button class="btn ghost" id="playBtn" type="button" aria-pressed="false"><svg class="i" aria-hidden="true" id="playIcon"><use href="#i-play"/></svg><span id="playLabel">Watch Sarah work</span></button>
     </div>
     <dl class="facts">
-      <div><dt>Role</dt><dd>Sole product designer</dd></div>
+      <div><dt>Role</dt><dd>UX and product designer</dd></div>
       <div><dt>When</dt><dd>Aug 2025 to Mar 2026</dd></div>
       <div><dt>With</dt><dd>PM, engineering, stakeholders</dd></div>
       <div><dt>Shipped to</dt><dd>20 paying teams</dd></div>
@@ -72,16 +99,37 @@
   </div>
 </section>
 
+<section class="tldr" id="summary" aria-labelledby="tldr-title">
+  <div class="wrap">
+    <div class="tlgrid">
+      <div>
+        <h2 id="tldr-title">Sarah in sixty seconds</h2>
+        <p class="tlsum">I designed Ruh's first AI employee end to end, as its UX and product designer. She shipped, and <b>20 client teams</b> pay for her, about <b>$14K a month</b>. <em class="src">From billing</em></p>
+        <p class="tlsum">The design comes down to five calls about what a sales manager sees and controls.</p>
+        <p class="tljump"><a class="btn primary" href="#risks">Read the decisions <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="btn ghost" href="#results">See the results</a></p>
+      </div>
+      <ol class="tldec" aria-label="The five decisions">
+        <li><a href="#d1"><b>1</b>Hiring Sarah includes connecting her CRM</a></li>
+        <li><a href="#d2"><b>2</b>Sarah works from one CRM, not three</a></li>
+        <li><a href="#d3"><b>3</b>Sarah tells you what each reply needs</a></li>
+        <li><a href="#d4"><b>4</b>You can take the wheel in one click</a></li>
+        <li><a href="#d5"><b>5</b>Every campaign shows where Sarah is</a></li>
+      </ol>
+    </div>
+    <figure class="shot tlshot" tabindex="0"><img src="img/stage-tracker.png" alt="Sarah's campaign overview: a six-stage tracker shows the current stage and the next step, in plain words." loading="lazy"><figcaption>Every campaign shows where Sarah is. Decision 5, from the shipped product.</figcaption></figure>
+  </div>
+</section>
+
 <nav class="rail" aria-label="Case study chapters along Sarah's pipeline">
   <div class="inner">
     <div class="cols" id="railCols">
-      <a class="stagebtn" href="#brief" data-i="0"><i class="magnet"></i><span>Connect<b class="t">The brief</b></span></a>
-      <a class="stagebtn" href="#landscape" data-i="1"><i class="magnet"></i><span>Capture<b class="t">Rivals and users</b></span></a>
-      <a class="stagebtn" href="#risks" data-i="2"><i class="magnet"></i><span>Engage<b class="t">Risks and process</b></span></a>
-      <a class="stagebtn" href="#decisions" data-i="3"><i class="magnet"></i><span>Qualify<b class="t">Five decisions</b></span></a>
-      <a class="stagebtn" href="#system" data-i="4"><i class="magnet"></i><span>Hand off<b class="t">The system</b></span></a>
-      <a class="stagebtn" href="#results" data-i="5"><i class="magnet"></i><span>Measure<b class="t">Results</b></span></a>
-      <a class="stagebtn is-sync" href="#crm" data-i="6"><i class="magnet"></i><span>Sync<b class="t">CRM and lessons</b></span></a>
+      <a class="stagebtn" href="#brief" data-i="0"><i class="magnet"></i><span>Problem<b class="t">Connect</b></span></a>
+      <a class="stagebtn" href="#landscape" data-i="1"><i class="magnet"></i><span>Research<b class="t">Capture</b></span></a>
+      <a class="stagebtn" href="#structure" data-i="2"><i class="magnet"></i><span>Structure<b class="t">Engage</b></span></a>
+      <a class="stagebtn" href="#decisions" data-i="3"><i class="magnet"></i><span>Decisions<b class="t">Qualify</b></span></a>
+      <a class="stagebtn" href="#works" data-i="4"><i class="magnet"></i><span>Walkthrough<b class="t">Hand off</b></span></a>
+      <a class="stagebtn" href="#results" data-i="5"><i class="magnet"></i><span>Results<b class="t">Measure</b></span></a>
+      <a class="stagebtn is-sync" href="#crm" data-i="6"><i class="magnet"></i><span>CRM<b class="t">Sync</b></span></a>
       <span class="railava" id="railAva" aria-hidden="true"><i class="pinhead"></i><b>Ava Johnson</b><span id="railAvaNote">Found in HubSpot list</span></span>
     </div>
     <div class="voice"><img src="img/sarah-bust.png" alt=""><p><span class="sr">Sarah says: </span><span id="railVoice">I can do the whole job. You still sign off.</span></p></div>
@@ -90,6 +138,9 @@
 
 <main id="main">
 
+
+</main>
+
 <!-- CONNECT -->
 <section class="stage" id="brief" data-stage="0" data-voice="I can do the whole job. You still sign off." aria-labelledby="brief-title">
   <div class="wrap">
@@ -97,39 +148,34 @@
       <h2 id="brief-title">Sarah does the whole SDR job. The manager still answers for it.</h2>
       <p>Tools like Apollo make a person do every step. Sarah does them all, so the design problem changed from doing to deciding.</p>
     </div>
-    <ul class="brief" aria-label="The brief from stakeholders">
-      <li>Launch an AI SDR product<small>Ruh's first sellable AI employee</small></li>
-      <li>Replace manual outbound<small>Pipeline without hiring SDRs</small></li>
-      <li>Fit the CRM teams already use<small>Zoho, HubSpot or Salesforce</small></li>
-      <li>Ship fast<small>One designer, one PM, a tight timeline</small></li>
-    </ul>
-    <p class="question">Which decisions stay with the manager, and <span class="mark">what do they need to see</span> to make them?</p>
 
-    <div class="block">
-      <h3>What the business needed</h3>
-      <div class="needs">
-        <div><b>Teams that keep paying</b><span>Monthly tiers need value every week.</span></div>
-        <div><b>Leads in their CRM</b><span>A lead outside it never gets worked.</span></div>
-        <div><b>Enterprise trust</b><span>A hidden agent is a black box.</span></div>
+    <div class="block problem" aria-label="The problem">
+      <p class="pstate">Sales teams need more meetings than their SDRs can book. Hiring more SDRs is slow and costly, prospecting tools still need a person on every step, and AI SDRs that work out of sight ask a manager to <span class="mark">trust what they can't see</span>.</p>
+      <div class="pgrid">
+        <div class="pcard"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-user"/></svg></span><b><span class="lin">User problem.</span> The manager answers for every email sent in the company's name.</b><p>They want the output of an SDR without losing control of tone, targets or the CRM. A hidden agent puts their name at risk.</p></div>
+        <div class="pcard"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-briefcase"/></svg></span><b><span class="lin">Business problem.</span> Ruh needed its first AI employee that teams would pay for every month.</b><p>Monthly tiers only renew if Sarah shows value every week, and leads only count once they reach the team's CRM.</p></div>
+        <div class="pcard"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-pen"/></svg></span><b><span class="lin">Design problem.</span> An agent that does the whole job still needs a human who decides.</b><p>The work changed from doing outbound to directing it. The interface had to show what Sarah is doing and where a person steps in.</p></div>
       </div>
+      <p class="briefline"><b>The brief:</b> launch an AI SDR, replace manual outbound, fit the CRM teams already use, and ship fast. There was no PRD, so I turned it into the problem above.</p>
     </div>
 
-    <div class="block">
-      <h3>From a tool you drive to a teammate you direct</h3>
-      <div class="vs">
-        <div class="tool"><h3>A tool</h3><ul>
-          <li><svg class="i"><use href="#i-x"/></svg>An AI that only sends emails</li>
-          <li><svg class="i"><use href="#i-x"/></svg>Replies sorted by hand</li>
-          <li><svg class="i"><use href="#i-x"/></svg>A black box</li>
-          <li><svg class="i"><use href="#i-x"/></svg>A second lead list</li>
-          <li><svg class="i"><use href="#i-x"/></svg>All or nothing automation</li>
+
+
+    <div class="block role" aria-labelledby="role-title">
+      <h3 id="role-title">My role: UX and product design, end to end</h3>
+      <p class="lede">I was the only designer on Sarah, working with one PM and the engineering team. I owned the experience from the first workflow map to the last QA pass.</p>
+      <div class="roles">
+        <div><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-target"/></svg></span><b>As the product designer</b><ul>
+          <li>Framed the problem and scope with the PM</li>
+          <li>Ran the competitor study and set Sarah's position</li>
+          <li>Wrote acceptance criteria into the Jira stories</li>
+          <li>Chose what shipped first and what waited</li>
         </ul></div>
-        <div class="mate"><h3><img src="img/sarah-bust.png" alt="">A teammate</h3><ul>
-          <li><svg class="i"><use href="#i-check"/></svg>A rep you brief and correct</li>
-          <li><svg class="i"><use href="#i-check"/></svg>Every reply has a next step</li>
-          <li><svg class="i"><use href="#i-check"/></svg>Every campaign shows its stage</li>
-          <li><svg class="i"><use href="#i-check"/></svg>One default CRM</li>
-          <li><svg class="i"><use href="#i-check"/></svg>Take over in one click</li>
+        <div><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-layers"/></svg></span><b>As the UX and UI designer</b><ul>
+          <li>Mapped the SDR workflow and Sarah's information architecture</li>
+          <li>Designed the user flows, setup, chat, campaigns and replies</li>
+          <li>Built the screens and components on Ruh's design system</li>
+          <li>Checked the build against Figma, screen by screen</li>
         </ul></div>
       </div>
     </div>
@@ -144,6 +190,20 @@
       <p>Apollo and ZoomInfo are tools a person drives. Artisan is the closest rival, an AI SDR too. The difference I designed for is control.</p>
     </div>
 
+    <div class="block research" aria-labelledby="rm-title">
+      <h3 id="rm-title">How I researched it</h3>
+      <p class="lede">Sarah started before Ruh had customers, so I used the sources I could reach and tested the flows myself as the manager would.</p>
+      <ol class="methods">
+        <li><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-search"/></svg></span><b>Competitor study</b><p>Apollo, ZoomInfo and Artisan for outbound. Glean and Manus for how agents show their work.</p><em>Found the gap: control</em></li>
+        <li><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-flow"/></svg></span><b>SDR workflow mapping</b><p>I mapped a human SDR's job end to end, from finding a lead to booking the meeting.</p><em>Found six stages, each ending in a decision</em></li>
+        <li><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg></span><b>Stakeholder and PM reviews</b><p>Recurring reviews of plans and screens with the PM and the client stakeholder.</p><em>Heard: Sarah can never be a black box</em></li>
+        <li><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-list"/></svg></span><b>Heuristic walkthroughs</b><p>I ran every flow as the sales manager and scored it against Nielsen's ten heuristics.</p><em>Found unclear status and control</em></li>
+        <li><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-doc"/></svg></span><b>Requirements review</b><p>Jira stories and acceptance criteria from engineering and the PM.</p><em>Found the hard limits: CRMs, inboxes, sending caps</em></li>
+        <li><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-code"/></svg></span><b>Build QA</b><p>Figma against the live build, logged in shared bug sheets.</p><em>Kept the shipped product true to the design</em></li>
+      </ol>
+    </div>
+
+    <h3 class="rivh">Competitor study: who does what</h3>
     <div class="rivals" role="group" aria-label="Highlight a rival">
       <button class="chip" type="button" data-col="1" aria-pressed="false">Apollo</button>
       <button class="chip" type="button" data-col="2" aria-pressed="false">ZoomInfo</button>
@@ -165,8 +225,8 @@
     <div class="legend" aria-hidden="true"><span><i class="dot s"></i>Strong</span><span><i class="dot p"></i>Partial</span><span><i class="dot"></i>Missing</span><span><i class="dot u"></i>Unclear</span></div>
     <p class="note">Competitor study with the PM during the project. Ratings are my reading of each product.</p>
 
-    <div class="block">
-      <h3>The person she works for</h3>
+    <details class="block validate fold">
+      <summary><h3>Who she works for</h3><span class="sumhint">A sales manager proto-persona and three job stories</span></summary>
       <p class="lede">A sales manager answers for every email sent in the company's name.</p>
       <div class="persona">
         <div class="who">
@@ -181,33 +241,187 @@
         </div>
         <div>
           <div class="jobs" role="list">
-            <div class="job" role="listitem"><div><small>When</small>I need more meetings than we book</div><div><small>I want</small>An AI I can brief and watch</div><div class="so"><small>So</small>Pipeline grows, reputation stays safe</div></div>
-            <div class="job" role="listitem"><div><small>When</small>A prospect objects or asks a question</div><div><small>I want</small>To step in with full context</div><div class="so"><small>So</small>I don't lose a warm lead</div></div>
-            <div class="job" role="listitem"><div><small>When</small>A lead is qualified</div><div><small>I want</small>It to appear in our CRM</div><div class="so"><small>So</small>Sales works it without retyping</div></div>
+            <div class="job" role="listitem"><p><span>When</span> I need more meetings than we book, <span>I want</span> an AI I can brief and watch, <span>so</span> pipeline grows, reputation stays safe.</p></div>
+            <div class="job" role="listitem"><p><span>When</span> a prospect objects or asks a question, <span>I want</span> to step in with full context, <span>so</span> I don't lose a warm lead.</p></div>
+            <div class="job" role="listitem"><p><span>When</span> a lead is qualified, <span>I want</span> it to appear in our CRM, <span>so</span> sales works it without retyping.</p></div>
           </div>
           <p class="secondary"><b>Secondary: workspace admin or RevOps.</b> Approves the CRM and owns the data: one source of truth, no duplicate leads, limits and warm-up visible.</p>
         </div>
       </div>
+    </details>
+
+    <div class="block insights" aria-labelledby="ins-title">
+      <h3 id="ins-title">Insights that shaped Sarah</h3>
+      <p class="lede">Four insights became four rules I checked every screen against.</p>
+      <div class="ins2">
+        <article class="p0"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-eye"/></svg></span><h4>Show the work</h4><p class="saw">Managers fear not knowing what the AI sent, more than the writing itself.</p><p>Every campaign shows its stage. Every tool step is visible.</p><span class="tag">H1 System status</span></article>
+        <article class="p1"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-okc"/></svg></span><h4>Propose, then ask</h4><p class="saw">Rivals made a person do every step, or left the person out.</p><p>Sarah drafts the plan. Nothing runs until a person says yes.</p><span class="tag">H3 User control</span></article>
+        <article class="p2"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-db"/></svg></span><h4>One source of truth</h4><p class="saw">A lead outside the CRM never gets worked. Duplicates break trust.</p><p>One default CRM. Sarah writes to it and nowhere else.</p><span class="tag">H5 Error prevention</span></article>
+        <article class="p3"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-swap"/></svg></span><h4>Hand back in one click</h4><p class="saw">The moments that matter are replies: an objection, a question, a yes.</p><p>Any thread switches to Manual with its full context.</p><span class="tag">H3 User control</span></article>
+      </div>
+      <p class="insend"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span><span>Managers don't need another tool. They need <b>visibility</b>, <b>control</b> and <b>one place for their leads</b>.</span></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- STRUCTURE: blueprint, sitemap, IA, user flows -->
+<section class="stage" id="structure" data-stage="2" data-voice="Everything about me lives in three places." aria-labelledby="str-title">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="str-title">Before screens, I gave Sarah a structure.</h2>
+      <p>The job, the map and the paths. Drawn from my workflow map and the shipped screens.</p>
+    </div>
+
+    <div class="block" aria-labelledby="bp-title">
+      <h3 id="bp-title">Service blueprint: one job, six stages</h3>
+      <p class="lede">What the manager does and sees, and what Sarah does behind the line.</p>
+      <div class="bpwrap" tabindex="0" role="region" aria-label="Service blueprint, scrolls sideways on small screens"><div class="bp">
+<div class="bplab"><b>Journey stages</b></div>
+<div class="bpstage s0"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-sliders"/></svg></span><div><b>1. Set up</b><span>Hire Sarah</span></div></div>
+<div class="bpstage s1"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg></span><div><b>2. Brief</b><span>Tell her the goal</span></div></div>
+<div class="bpstage s2"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-search"/></svg></span><div><b>3. Discover</b><span>Find prospects</span></div></div>
+<div class="bpstage s3"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg></span><div><b>4. Engage</b><span>Run the sequence</span></div></div>
+<div class="bpstage s4"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-list"/></svg></span><div><b>5. Qualify</b><span>Sort the replies</span></div></div>
+<div class="bpstage s5"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-db"/></svg></span><div><b>6. Sync</b><span>Hand off to the CRM</span></div></div>
+<div class="bplab"><b>Manager does</b><span>Actions</span></div>
+<div class="bpcell s0"><ul><li>Launch Sarah</li><li>Connect a CRM</li><li>Approve domains</li></ul></div>
+<div class="bpcell s1"><ul><li>Describe the product</li><li>Pick a campaign type</li><li>Approve the plan</li></ul></div>
+<div class="bpcell s2"><ul><li>Review the ideal customer</li><li>Accept or edit the profile</li></ul></div>
+<div class="bpcell s3"><ul><li>Review the sequence</li><li>Edit emails or dates</li></ul></div>
+<div class="bpcell s4"><ul><li>Read flagged replies</li><li>Take over a thread</li></ul></div>
+<div class="bpcell s5"><ul><li>Open the lead in the CRM</li><li>Check the results</li></ul></div>
+<div class="bplab"><b>Manager sees</b><span>Frontstage</span></div>
+<div class="bpcell s0 card2"><b>Guided setup</b><span>Four steps, about 7 minutes</span></div>
+<div class="bpcell s1 card2"><b>Chat with Sarah</b><span>Plan table, approve in chat</span></div>
+<div class="bpcell s2 card2"><b>Prospects tab</b><span>Table and CSV export</span></div>
+<div class="bpcell s3 card2"><b>Stage tracker</b><span>Current stage, next step</span></div>
+<div class="bpcell s4 card2"><b>Responses</b><span>Seven types, Auto or Manual</span></div>
+<div class="bpcell s5 card2"><b>Overview and metrics</b><span>Funnel, meetings, KPIs</span></div>
+<div class="bpline"><span>Line of visibility</span></div>
+<div class="bplab"><b>Sarah does</b><span>Backstage</span></div>
+<div class="bpcell s0 card2 back"><b>Warm-up and guardrails</b><span>21 days, capped sending</span></div>
+<div class="bpcell s1 card2 back"><b>Campaign drafting</b><span>Saved as Draft until yes</span></div>
+<div class="bpcell s2 card2 back"><b>Prospect research</b><span>Find and enrich contacts</span></div>
+<div class="bpcell s3 card2 back"><b>Outreach</b><span>Send, wait, follow up</span></div>
+<div class="bpcell s4 card2 back"><b>Reply sorting</b><span>Classify, draft next step</span></div>
+<div class="bpcell s5 card2 back"><b>CRM write</b><span>Qualified leads to default CRM</span></div>
+<div class="bpline"><span>Line of internal interaction</span></div>
+<div class="bplab"><b>Systems</b><span>Supporting</span></div>
+<div class="bpcell s0 card2 sys"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg></span><b>Email domains</b><span>Inboxes Ruh prepares</span></div>
+<div class="bpcell s1 card2 sys"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg></span><b>Ruh chat platform</b><span>Global Agent, tool steps</span></div>
+<div class="bpcell s2 card2 sys"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-search"/></svg></span><b>Prospect data</b><span>Enrichment sources</span></div>
+<div class="bpcell s3 card2 sys"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg></span><b>Email delivery</b><span>Daily caps per inbox</span></div>
+<div class="bpcell s4 card2 sys"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-eye"/></svg></span><b>Notifications</b><span>What needs a person</span></div>
+<div class="bpcell s5 card2 sys"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-db"/></svg></span><b>HubSpot or Zoho</b><span>The team's default CRM</span></div>
+</div></div>
+    </div>
+
+    <div class="block" aria-labelledby="map-title">
+      <h3 id="map-title">Sitemap: the pages</h3>
+      <p class="lede">Where Sarah lives in Ruh, and every page a manager can open.</p>
+      <div class="flowwrap mapwrap" tabindex="0" role="region" aria-label="Sitemap diagram, scrolls sideways on small screens"><svg class="mapsvg" viewBox="0 0 1200 600" role="img" aria-labelledby="mapT mapD" xmlns="http://www.w3.org/2000/svg"><title id="mapT">Sitemap: where Sarah lives inside the Ruh workspace</title><desc id="mapD">Ruh workspace has four areas: Home, Sarah, Setup and Admin Console. Sarah has Chat, History and Campaigns. Campaigns opens Campaign insight with six tabs. The same pages are listed as text below.</desc><g font-family="Satoshi, system-ui, sans-serif"><rect x="480.0" y="18.0" width="240" height="52" rx="26" fill="#12195E"/><text x="600.0" y="36.0" text-anchor="middle" dominant-baseline="middle" font-size="15" font-weight="700" fill="#fff">Ruh workspace</text><text x="600.0" y="55.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#E9DDFF">Shared left rail</text><path d="M600 70V104" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><path d="M125 104H1085" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><path d="M125 104V134" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="30.0" y="134.0" width="190" height="52" rx="14" fill="#F4F0FF"/><text x="125.0" y="152.0" text-anchor="middle" dominant-baseline="middle" font-size="15" font-weight="700" fill="#12195E">Home</text><text x="125.0" y="171.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">Global Agent</text><path d="M530 104V134" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="425.0" y="134.0" width="210" height="52" rx="14" fill="#AE00D0"/><text x="530.0" y="152.0" text-anchor="middle" dominant-baseline="middle" font-size="15" font-weight="700" fill="#fff">Sarah</text><text x="530.0" y="171.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#fff">Your AI SDR</text><path d="M880 104V134" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="785.0" y="134.0" width="190" height="52" rx="14" fill="#F4F0FF"/><text x="880.0" y="152.0" text-anchor="middle" dominant-baseline="middle" font-size="15" font-weight="700" fill="#12195E">Setup</text><text x="880.0" y="171.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">Four guided steps</text><path d="M1085 104V134" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="990.0" y="134.0" width="190" height="52" rx="14" fill="#F4F0FF"/><text x="1085.0" y="152.0" text-anchor="middle" dominant-baseline="middle" font-size="15" font-weight="700" fill="#12195E">Admin Console</text><text x="1085.0" y="171.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">Org admin</text><path d="M44.0 186.0V286.0" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><path d="M44.0 206.0H58.0" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="58.0" y="191.0" width="162" height="30" rx="15" fill="#F6F1FF"/><text x="139.0" y="207.0" text-anchor="middle" dominant-baseline="middle" font-size="12.5" font-weight="600" fill="#12195E">Prompt bar</text><path d="M44.0 246.0H58.0" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="58.0" y="231.0" width="162" height="30" rx="15" fill="#F6F1FF"/><text x="139.0" y="247.0" text-anchor="middle" dominant-baseline="middle" font-size="12.5" font-weight="600" fill="#12195E">Launch Sarah</text><path d="M44.0 286.0H58.0" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="58.0" y="271.0" width="162" height="30" rx="15" fill="#F6F1FF"/><text x="139.0" y="287.0" text-anchor="middle" dominant-baseline="middle" font-size="12.5" font-weight="600" fill="#12195E">Notifications</text><path d="M799.0 186.0V326.0" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><path d="M799.0 206.0H813.0" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="813.0" y="191.0" width="162" height="30" rx="15" fill="#F6F1FF"/><text x="894.0" y="207.0" text-anchor="middle" dominant-baseline="middle" font-size="12.5" font-weight="600" fill="#12195E">1  Meet Sarah</text><path d="M799.0 246.0H813.0" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="813.0" y="231.0" width="162" height="30" rx="15" fill="#F6F1FF"/><text x="894.0" y="247.0" text-anchor="middle" dominant-baseline="middle" font-size="12.5" font-weight="600" fill="#12195E">2  CRM and meeting link</text><path d="M799.0 286.0H813.0" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="813.0" y="271.0" width="162" height="30" rx="15" fill="#F6F1FF"/><text x="894.0" y="287.0" text-anchor="middle" dominant-baseline="middle" font-size="12.5" font-weight="600" fill="#12195E">3  Guardrails</text><path d="M799.0 326.0H813.0" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="813.0" y="311.0" width="162" height="30" rx="15" fill="#F6F1FF"/><text x="894.0" y="327.0" text-anchor="middle" dominant-baseline="middle" font-size="12.5" font-weight="600" fill="#12195E">4  Domains and warm-up</text><path d="M1004.0 186.0V286.0" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><path d="M1004.0 206.0H1018.0" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="1018.0" y="191.0" width="162" height="30" rx="15" fill="#F6F1FF"/><text x="1099.0" y="207.0" text-anchor="middle" dominant-baseline="middle" font-size="12.5" font-weight="600" fill="#12195E">Connectors, default CRM</text><path d="M1004.0 246.0H1018.0" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="1018.0" y="231.0" width="162" height="30" rx="15" fill="#F6F1FF"/><text x="1099.0" y="247.0" text-anchor="middle" dominant-baseline="middle" font-size="12.5" font-weight="600" fill="#12195E">Credits and billing</text><path d="M1004.0 286.0H1018.0" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="1018.0" y="271.0" width="162" height="30" rx="15" fill="#F6F1FF"/><text x="1099.0" y="287.0" text-anchor="middle" dominant-baseline="middle" font-size="12.5" font-weight="600" fill="#12195E">Members</text><path d="M530 186V226" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><path d="M380 226H680" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><path d="M380 226V254" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="310.0" y="254.0" width="140" height="48" rx="12" fill="#fff" stroke="#7B5AFF" stroke-width="1.5"/><text x="380.0" y="270.0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Chat</text><text x="380.0" y="289.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">Brief, plan, approve</text><path d="M530 226V254" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="460.0" y="254.0" width="140" height="48" rx="12" fill="#fff" stroke="#7B5AFF" stroke-width="1.5"/><text x="530.0" y="270.0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">History</text><text x="530.0" y="289.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">Past chats</text><path d="M680 226V254" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="610.0" y="254.0" width="140" height="48" rx="12" fill="#fff" stroke="#7B5AFF" stroke-width="1.5"/><text x="680.0" y="270.0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Campaigns</text><text x="680.0" y="289.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">List and inboxes</text><path d="M680 302V356" fill="none" stroke="#AE00D0" stroke-width="1.6" stroke-dasharray="5 4"/><rect x="688" y="330" width="74" height="18" rx="9" fill="#fff"/><text x="725.0" y="339.0" text-anchor="middle" dominant-baseline="middle" font-size="11.5" font-weight="700" fill="#AE00D0">Open one</text><rect x="590.0" y="356.0" width="180" height="48" rx="12" fill="#fff" stroke="#AE00D0" stroke-width="1.5" stroke-dasharray="5 4"/><text x="680.0" y="372.0" text-anchor="middle" dominant-baseline="middle" font-size="15" font-weight="700" fill="#12195E">Campaign insight</text><text x="680.0" y="391.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">One campaign</text><path d="M680 404V448" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><path d="M275.0 448H925.0" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><path d="M275.0 448V477" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="216.0" y="477.0" width="118" height="30" rx="15" fill="#F6F1FF"/><text x="275.0" y="493.0" text-anchor="middle" dominant-baseline="middle" font-size="12.5" font-weight="600" fill="#12195E">Overview</text><path d="M405.0 448V477" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="346.0" y="477.0" width="118" height="30" rx="15" fill="#F6F1FF"/><text x="405.0" y="493.0" text-anchor="middle" dominant-baseline="middle" font-size="12.5" font-weight="600" fill="#12195E">Prospects</text><path d="M535.0 448V477" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="476.0" y="477.0" width="118" height="30" rx="15" fill="#F6F1FF"/><text x="535.0" y="493.0" text-anchor="middle" dominant-baseline="middle" font-size="12.5" font-weight="600" fill="#12195E">Sequence</text><path d="M665.0 448V477" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="606.0" y="477.0" width="118" height="30" rx="15" fill="#F6F1FF"/><text x="665.0" y="493.0" text-anchor="middle" dominant-baseline="middle" font-size="12.5" font-weight="600" fill="#12195E">Responses</text><path d="M795.0 448V477" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="736.0" y="477.0" width="118" height="30" rx="15" fill="#F6F1FF"/><text x="795.0" y="493.0" text-anchor="middle" dominant-baseline="middle" font-size="12.5" font-weight="600" fill="#12195E">Metrics</text><path d="M925.0 448V477" fill="none" stroke="#CFC4FF" stroke-width="1.6"/><rect x="866.0" y="477.0" width="118" height="30" rx="15" fill="#F6F1FF"/><text x="925.0" y="493.0" text-anchor="middle" dominant-baseline="middle" font-size="12.5" font-weight="600" fill="#12195E">Channels</text><text x="600.0" y="534.0" text-anchor="middle" dominant-baseline="middle" font-size="12.5" font-weight="600" fill="#4F5478">Tabs inside every campaign</text></g></svg></div>
+      <ul class="legend2" aria-label="Sitemap legend">
+        <li><i class="lg lg-root"></i>Workspace</li><li><i class="lg lg-area"></i>Area</li><li><i class="lg lg-main"></i>Sarah</li><li><i class="lg lg-page"></i>Page</li><li><i class="lg lg-deep"></i>Opens per campaign</li><li><i class="lg lg-chip"></i>Section or tab</li>
+      </ul>
+      <details class="flowtext"><summary>Read the sitemap as text</summary>
+        <ul class="maptext">
+          <li><b>Ruh workspace</b>
+            <ul>
+              <li>Home: prompt bar, Launch Sarah, notifications</li>
+              <li>Sarah: Chat, History, Campaigns. Campaigns opens Campaign insight with Overview, Prospects, Sequence, Responses, Metrics and Channels</li>
+              <li>Setup: Meet Sarah, CRM and meeting link, Guardrails, Domains and warm-up</li>
+              <li>Admin Console: connectors and default CRM, credits and billing, members</li>
+            </ul>
+          </li>
+        </ul>
+      </details>
+    </div>
+
+    <div class="block" aria-labelledby="ia-title">
+      <h3 id="ia-title">Information architecture: the data</h3>
+      <p class="lede">The six objects Sarah works with, how they connect, and the labels every screen shares. Modelled on the objects a CRM already uses.</p>
+      <ol class="iamodel" aria-label="Sarah's objects, in order">
+        <li class="iaobj o0"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-megaphone"/></svg></span><b>Campaign</b><ul><li>Goal and type</li><li>Status</li><li>Inboxes</li></ul><p class="lives"><span>Lives in</span> Campaigns list, Overview</p><em>Is it running?</em></li>
+        <li class="iarel" aria-hidden="true"><span>targets</span></li>
+        <li class="iaobj o1"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-target"/></svg></span><b>Ideal customer</b><ul><li>Industry, region</li><li>Roles, seniority</li><li>Keywords</li></ul><p class="lives"><span>Lives in</span> Chat, Campaign info</p><em>Who are we after?</em></li>
+        <li class="iarel" aria-hidden="true"><span>matches</span></li>
+        <li class="iaobj o2"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-user"/></svg></span><b>Prospect</b><ul><li>Person, company</li><li>Email, role</li><li>Stage</li></ul><p class="lives"><span>Lives in</span> Prospects tab</p><em>Who did she find?</em></li>
+        <li class="iarel" aria-hidden="true"><span>receives</span></li>
+        <li class="iaobj o3"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg></span><b>Sequence</b><ul><li>Emails</li><li>Cycles</li><li>Send dates</li></ul><p class="lives"><span>Lives in</span> Sequence tab</p><em>What will she send?</em></li>
+        <li class="iarel" aria-hidden="true"><span>gets back</span></li>
+        <li class="iaobj o4"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-reply"/></svg></span><b>Reply</b><ul><li>Reply type</li><li>Next step</li><li>Auto or Manual</li></ul><p class="lives"><span>Lives in</span> Responses tab</p><em>What needs me?</em></li>
+        <li class="iarel" aria-hidden="true"><span>becomes</span></li>
+        <li class="iaobj o5"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-db"/></svg></span><b>CRM record</b><ul><li>Qualified lead</li><li>Owner</li><li>Sync state</li></ul><p class="lives"><span>Lives in</span> Your default CRM</p><em>Did it land?</em></li>
+      </ol>
+      <div class="ialabels">
+        <div><b>Campaign status</b><p><span>Draft</span><span>Active</span><span>Paused</span><span>Completed</span></p></div>
+        <div><b>Who is in control</b><p><span>Automated</span><span>Manual</span></p></div>
+        <div><b>Reply types</b><p><span>Positive</span><span>Scheduled</span><span>Objection</span><span>Neutral</span><span>Out of Office</span><span>Complex</span><span>No response</span></p></div>
+      </div>
+    </div>
+
+    <div class="block" aria-labelledby="uf-title">
+      <h3 id="uf-title">User flows</h3>
+      <p class="lede">Three paths, one line. Diamonds are where a person decides.</p>
+      <div class="flowwrap" tabindex="0" role="region" aria-label="User flow diagram, scrolls sideways on small screens"><svg class="flowsvg" viewBox="0 0 1240 880" role="img" aria-labelledby="flowTitle flowDesc" xmlns="http://www.w3.org/2000/svg"><title id="flowTitle">Sarah user flows: hire Sarah, launch a campaign, handle a reply</title><desc id="flowDesc">Three connected flows. The same steps are listed as text below the diagram.</desc><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7B5AFF"/></marker><marker id="ahm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8A8FB0"/></marker></defs><g font-family="Satoshi, system-ui, sans-serif"><text x="20" y="40" font-size="13" font-weight="700" fill="#4F5478" letter-spacing=".02em">1  Hire Sarah</text><path d="M180.7 130.0H200.1" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><path d="M352.1 130.0H386.6" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><path d="M508.6 130.0H543.0" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><rect x="508.1" y="106.0" width="35.3" height="20" rx="10" fill="#fff"/><text x="525.8" y="117.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#5B3FE0">Yes</text><path d="M695.0 130.0H714.4" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><path d="M866.4 130.0H885.9" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><path d="M1037.9 130.0H1057.3" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><path d="M448.6 170.0V215.0" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><rect x="434.5" y="176.0" width="28.2" height="20" rx="10" fill="#fff"/><text x="448.6" y="187.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#AE00D0">No</text><rect x="373.6" y="217.0" width="150" height="62" rx="14" fill="#fff" stroke="#8A8FB0" stroke-width="1.3" stroke-dasharray="5 4"/><text x="448.6" y="239.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Set up later</text><text x="448.6" y="256.5" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">Banner stays in chat</text><path d="M523.6 248.0H620.0V163.0" fill="none" stroke="#8A8FB0" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#ahm)"/><rect x="547.0" y="238.0" width="49.5" height="20" rx="10" fill="#fff"/><text x="571.8" y="249.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#4F5478">Later</text><rect x="30.7" y="99.0" width="150" height="62" rx="31" fill="#fff" stroke="#7B5AFF" stroke-width="1.5"/><text x="105.7" y="121.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Launch Sarah</text><text x="105.7" y="138.5" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">From Home</text><rect x="202.1" y="99.0" width="150" height="62" rx="14" fill="#F4F0FF"/><text x="277.1" y="121.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Meet Sarah</text><text x="277.1" y="138.5" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">About 7 minutes</text><polygon points="448.6,90.0 508.6,130.0 448.6,170.0 388.6,130.0" fill="#F6E3FA" stroke="#AE00D0" stroke-width="1.5"/><text x="448.6" y="130.0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">CRM now?</text><rect x="545.0" y="99.0" width="150" height="62" rx="14" fill="#F4F0FF"/><text x="620.0" y="121.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Connect CRM</text><text x="620.0" y="138.5" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">HubSpot or Zoho</text><rect x="716.4" y="99.0" width="150" height="62" rx="14" fill="#F4F0FF"/><text x="791.4" y="121.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Guardrails</text><text x="791.4" y="138.5" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">Sending caps locked</text><rect x="887.9" y="99.0" width="150" height="62" rx="14" fill="#F4F0FF"/><text x="962.9" y="121.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Domains and</text><text x="962.9" y="138.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">inboxes</text><rect x="1059.3" y="99.0" width="150" height="62" rx="14" fill="#12195E"/><text x="1134.3" y="121.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#fff">21-day warm-up</text><text x="1134.3" y="138.5" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#E9DDFF">Then Sarah's chat</text><path d="M1134.3 161.0V320.0H105.7V397.0" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><rect x="532.0" y="307.0" width="176.0" height="26" rx="13" fill="#12195E"/><text x="620.0" y="321.0" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="700" fill="#fff">2  Launch a campaign</text><path d="M180.7 430.0H200.1" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><path d="M352.1 430.0H386.6" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><path d="M508.6 430.0H543.0" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><rect x="508.1" y="406.0" width="35.3" height="20" rx="10" fill="#fff"/><text x="525.8" y="417.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#5B3FE0">Yes</text><path d="M695.0 430.0H714.4" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><path d="M866.4 430.0H900.9" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><path d="M1022.9 430.0H1057.3" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><rect x="1022.4" y="406.0" width="35.3" height="20" rx="10" fill="#fff"/><text x="1040.1" y="417.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#5B3FE0">Yes</text><path d="M448.6 390.0V352.0H277.1V397.0" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><rect x="299.1" y="342.0" width="127.6" height="20" rx="10" fill="#fff"/><text x="362.9" y="353.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#AE00D0">No: edit in chat</text><path d="M962.9 390.0V352.0H791.4V397.0" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><rect x="816.9" y="342.0" width="120.5" height="20" rx="10" fill="#fff"/><text x="877.1" y="353.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#AE00D0">No: edit fields</text><rect x="30.7" y="399.0" width="150" height="62" rx="31" fill="#fff" stroke="#7B5AFF" stroke-width="1.5"/><text x="105.7" y="421.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Brief Sarah</text><text x="105.7" y="438.5" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">Product and goal</text><rect x="202.1" y="399.0" width="150" height="62" rx="14" fill="#F4F0FF"/><text x="277.1" y="421.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Plan table</text><text x="277.1" y="438.5" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">Sarah drafts it</text><polygon points="448.6,390.0 508.6,430.0 448.6,470.0 388.6,430.0" fill="#F6E3FA" stroke="#AE00D0" stroke-width="1.5"/><text x="448.6" y="421.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Approve</text><text x="448.6" y="438.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">plan?</text><rect x="545.0" y="399.0" width="150" height="62" rx="14" fill="#F4F0FF"/><text x="620.0" y="430.0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Saved as Draft</text><rect x="716.4" y="399.0" width="150" height="62" rx="14" fill="#F4F0FF"/><text x="791.4" y="421.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Ideal customer</text><text x="791.4" y="438.5" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">Examples per field</text><polygon points="962.9,390.0 1022.9,430.0 962.9,470.0 902.9,430.0" fill="#F6E3FA" stroke="#AE00D0" stroke-width="1.5"/><text x="962.9" y="421.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Accept</text><text x="962.9" y="438.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">profile?</text><rect x="1059.3" y="399.0" width="150" height="62" rx="14" fill="#12195E"/><text x="1134.3" y="421.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#fff">Campaign live</text><text x="1134.3" y="438.5" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#E9DDFF">Stage tracker starts</text><path d="M1134.3 461.0V620.0H105.7V697.0" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><rect x="543.4" y="607.0" width="153.2" height="26" rx="13" fill="#12195E"/><text x="620.0" y="621.0" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="700" fill="#fff">3  Handle a reply</text><path d="M180.7 730.0H200.1" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><path d="M352.1 730.0H386.6" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><path d="M508.6 730.0H543.0" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><rect x="508.1" y="706.0" width="35.3" height="20" rx="10" fill="#fff"/><text x="525.8" y="717.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#5B3FE0">Yes</text><path d="M695.0 730.0H729.4" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><path d="M851.4 730.0H885.9" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><rect x="851.0" y="706.0" width="35.3" height="20" rx="10" fill="#fff"/><text x="868.6" y="717.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#5B3FE0">Yes</text><path d="M1037.9 730.0H1057.3" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><path d="M448.6 770.0V815.0" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><rect x="434.5" y="776.0" width="28.2" height="20" rx="10" fill="#fff"/><text x="448.6" y="787.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#AE00D0">No</text><rect x="373.6" y="817.0" width="150" height="62" rx="14" fill="#fff" stroke="#8A8FB0" stroke-width="1.3" stroke-dasharray="5 4"/><text x="448.6" y="839.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Sarah follows up</text><text x="448.6" y="856.5" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">Or closes it</text><path d="M791.4 770.0V815.0" fill="none" stroke="#7B5AFF" stroke-width="1.6" marker-end="url(#ah)"/><rect x="777.3" y="776.0" width="28.2" height="20" rx="10" fill="#fff"/><text x="791.4" y="787.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#AE00D0">No</text><rect x="716.4" y="817.0" width="150" height="62" rx="14" fill="#fff" stroke="#8A8FB0" stroke-width="1.3" stroke-dasharray="5 4"/><text x="791.4" y="848.0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Approve her draft</text><path d="M866.4 848.0H1134.3V763.0" fill="none" stroke="#8A8FB0" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#ahm)"/><rect x="975.6" y="838.0" width="49.5" height="20" rx="10" fill="#fff"/><text x="1000.4" y="849.0" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="700" fill="#4F5478">Sends</text><rect x="30.7" y="699.0" width="150" height="62" rx="31" fill="#fff" stroke="#7B5AFF" stroke-width="1.5"/><text x="105.7" y="730.0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Prospect replies</text><rect x="202.1" y="699.0" width="150" height="62" rx="14" fill="#F4F0FF"/><text x="277.1" y="721.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Sarah sorts it</text><text x="277.1" y="738.5" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">7 action-led types</text><polygon points="448.6,690.0 508.6,730.0 448.6,770.0 388.6,730.0" fill="#F6E3FA" stroke="#AE00D0" stroke-width="1.5"/><text x="448.6" y="721.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Needs a</text><text x="448.6" y="738.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">person?</text><rect x="545.0" y="699.0" width="150" height="62" rx="14" fill="#F4F0FF"/><text x="620.0" y="721.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">You're notified</text><text x="620.0" y="738.5" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">With the next step</text><polygon points="791.4,690.0 851.4,730.0 791.4,770.0 731.4,730.0" fill="#F6E3FA" stroke="#AE00D0" stroke-width="1.5"/><text x="791.4" y="730.0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Take over?</text><rect x="887.9" y="699.0" width="150" height="62" rx="14" fill="#F4F0FF"/><text x="962.9" y="721.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#12195E">Manual reply</text><text x="962.9" y="738.5" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#4F5478">Full thread and files</text><rect x="1059.3" y="699.0" width="150" height="62" rx="14" fill="#12195E"/><text x="1134.3" y="721.5" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="700" fill="#fff">Lead in the CRM</text><text x="1134.3" y="738.5" text-anchor="middle" dominant-baseline="middle" font-size="12" font-weight="500" fill="#E9DDFF">Back to Automated</text></g></svg></div>
+      <ul class="legend2" aria-label="Legend">
+        <li><i class="lg lg-start"></i>Start</li><li><i class="lg lg-step"></i>Step</li><li><i class="lg lg-dec"></i>Decision</li><li><i class="lg lg-opt"></i>Optional path</li><li><i class="lg lg-end"></i>End</li>
+      </ul>
+      <details class="flowtext"><summary>Read the flows as text</summary>
+      <ol class="uflow" data-f="0" aria-label="Flow: hire Sarah">
+        <li class="start">Launch Sarah from Home</li>
+        <li>Sarah introduces herself and explains setup, about 7 minutes</li>
+        <li class="dec">Connect a CRM now?<em>Later: a banner keeps setup visible in her chat</em></li>
+        <li>Pick HubSpot or Zoho, set it as default</li>
+        <li>Review guardrails, sending caps are locked</li>
+        <li>Choose domains and name the inboxes</li>
+        <li class="dec">Start the 21-day warm-up?<em>Back: change domains first</em></li>
+        <li class="end">Land in Sarah's chat, ready to brief</li>
+      </ol>
+
+      <ol class="uflow" data-f="1" aria-label="Flow: launch a campaign">
+        <li class="start">Tell Sarah about your product</li>
+        <li>Sarah suggests campaign types</li>
+        <li>Pick one in plain words</li>
+        <li class="dec">Approve the plan table?<em>No: edit it in chat, Sarah redrafts</em></li>
+        <li>Campaign saved as Draft</li>
+        <li>Sarah asks for the ideal customer, with examples</li>
+        <li class="dec">Accept her suggested profile?<em>No: edit any field</em></li>
+        <li class="end">Campaign goes Live, stage tracker starts</li>
+      </ol>
+
+      <ol class="uflow" data-f="2" aria-label="Flow: handle a reply">
+        <li class="start">A prospect replies</li>
+        <li>Sarah sorts it into an action-led category</li>
+        <li class="dec">Does it need a person?<em>No: Sarah follows up or closes it</em></li>
+        <li>Manager is notified with the next step</li>
+        <li>Open the thread, full email, CC and files</li>
+        <li class="dec">Take over?<em>No: approve Sarah's draft</em></li>
+        <li>Switch to Manual and reply</li>
+        <li class="end">Positive lead syncs to the CRM, hand back to Automated</li>
+      </ol>
+      </details>
     </div>
   </div>
 </section>
 
 <!-- ENGAGE -->
-<section class="stage" id="risks" data-stage="2" data-voice="If you can't see me work, you won't trust me." aria-labelledby="risk-title">
+<section class="stage" id="risks" data-stage="3" data-voice="If you can't see me work, you won't trust me." aria-labelledby="risk-title">
   <div class="wrap">
     <div class="head">
       <h2 id="risk-title">Handing outbound to an AI creates seven risks. I designed against each.</h2>
-      <p>Drawn from my workflow map and the competitor study, before any screen. Severity is my judgement.</p>
+      <p>Drawn from my workflow map and the competitor study, before any screen. Severity is my judgement. Each decision below names the risk it answers.</p>
     </div>
     <ol class="risks">
-      <li class="risk"><span class="lvl hi">High</span><p>Sarah works out of sight, so nobody trusts her output</p><span><svg class="i"><use href="#i-arrow"/></svg>Decision 5: every campaign shows its stage</span></li>
-      <li class="risk"><span class="lvl hi">High</span><p>Setup feels like configuring a tool, not hiring a teammate</p><span><svg class="i"><use href="#i-arrow"/></svg>Decision 1: guided setup in her voice</span></li>
-      <li class="risk"><span class="lvl hi">High</span><p>Leads land in the wrong CRM, or in several</p><span><svg class="i"><use href="#i-arrow"/></svg>Decision 2: one default CRM</span></li>
-      <li class="risk"><span class="lvl hi">High</span><p>Replies arrive with no clear next step</p><span><svg class="i"><use href="#i-arrow"/></svg>Decision 3: seven action-led categories</span></li>
-      <li class="risk"><span class="lvl">Medium</span><p>The manager can't tell who is in control</p><span><svg class="i"><use href="#i-arrow"/></svg>Decision 4: Auto and Manual, in words</span></li>
-      <li class="risk"><span class="lvl">Medium</span><p>Taking over loses the conversation's context</p><span><svg class="i"><use href="#i-arrow"/></svg>Decision 4: the full thread, CC and files</span></li>
-      <li class="risk"><span class="lvl">Medium</span><p>Sending too fast burns the company's domain</p><span><svg class="i"><use href="#i-arrow"/></svg>Guardrails and a 21-day warm-up at setup</span></li>
-      <li class="risk keep"><span class="lvl">Strength</span><p>Briefing Sarah in chat feels natural</p><span><svg class="i"><use href="#i-check"/></svg>Kept: chat is how you brief her</span></li>
+      <li class="risk"><span class="lvl hi">High</span><p>Sarah works out of sight, so nobody trusts her output</p></li>
+      <li class="risk"><span class="lvl hi">High</span><p>Setup feels like configuring a tool, not hiring a teammate</p></li>
+      <li class="risk"><span class="lvl hi">High</span><p>Leads land in the wrong CRM, or in several</p></li>
+      <li class="risk"><span class="lvl hi">High</span><p>Replies arrive with no clear next step</p></li>
+      <li class="risk"><span class="lvl">Medium</span><p>The manager can't tell who is in control</p></li>
+      <li class="risk"><span class="lvl">Medium</span><p>Taking over loses the conversation's context</p></li>
+      <li class="risk"><span class="lvl">Medium</span><p>Sending too fast burns the company's domain</p></li>
+      <li class="risk keep"><span class="lvl">Kept</span><p>Briefing Sarah in chat feels natural</p></li>
     </ol>
 
     <div class="block">
@@ -228,18 +442,6 @@
       </div>
     </div>
 
-    <div class="block">
-      <h3>I mapped Sarah's whole job before drawing a screen</h3>
-      <p class="lede">Redrawn from my workflow map. Each column ends at the decision a person makes.</p>
-      <div class="flow">
-        <div><b>Onboard</b><ul><li>Connect CRM</li><li>Warm up inboxes</li></ul><span class="gate">All tools connected?</span></div>
-        <div><b>Define goal</b><ul><li>Describe the goal</li><li>Sarah plans</li></ul><span class="gate">Approve plan?</span></div>
-        <div><b>Discover</b><ul><li>Find prospects</li><li>Enrich the selected</li></ul><span class="gate">Enrich?</span></div>
-        <div><b>Configure</b><ul><li>Review the sequence</li><li>Edit emails and dates</li></ul><span class="gate">Edit?</span></div>
-        <div><b>Execute</b><ul><li>Send the email</li><li>Wait, follow up</li></ul><span class="gate">Replied?</span></div>
-        <div><b>Qualify</b><ul><li>Positive</li><li>Negative</li><li>Out of Office</li></ul><span class="gate">Positive: to the CRM</span></div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -257,7 +459,7 @@
     </div>
 
     <article class="decision block" id="d1" aria-labelledby="d1t">
-      <header><h3 id="d1t"><span class="mark">1.</span> Hiring Sarah includes connecting her CRM.</h3></header>
+      <header><h3 id="d1t"><span class="mark">1.</span> Hiring Sarah includes connecting her CRM.</h3><p class="answers"><b>Answers the risk:</b> Setup feels like configuring a tool, not hiring a teammate.</p></header>
       <div>
         <div class="steps" role="group" aria-label="Setup step">
           <button type="button" data-ob="0" aria-pressed="true"><small>Step 1</small><b>Meet Sarah</b></button>
@@ -282,7 +484,7 @@
     </article>
 
     <article class="decision" id="d2" aria-labelledby="d2t">
-      <header><h3 id="d2t"><span class="mark">2.</span> Sarah works from one CRM, not three.</h3></header>
+      <header><h3 id="d2t"><span class="mark">2.</span> Sarah works from one CRM, not three.</h3><p class="answers"><b>Answers the risk:</b> Leads land in the wrong CRM, or in several.</p></header>
       <div>
         <div class="seg" role="group" aria-label="First pass or final">
           <button type="button" data-d2="0" aria-pressed="false">First pass</button>
@@ -303,7 +505,7 @@
     </article>
 
     <article class="decision" id="d3" aria-labelledby="d3t">
-      <header><h3 id="d3t"><span class="mark">3.</span> Sarah tells you what each reply needs.</h3></header>
+      <header><h3 id="d3t"><span class="mark">3.</span> Sarah tells you what each reply needs.</h3><p class="answers"><b>Answers the risk:</b> Replies arrive with no clear next step.</p></header>
       <div>
         <figure class="shot" tabindex="0"><img src="img/d3-cycle3.png" width="1223" height="825" alt="Sarah's cycle 3 prospect list with a status for each prospect: Scheduled, Out of Office, Complex, Objection and No response."><span class="pin" style="left:91.4%;top:49%">1</span><span class="pin" style="left:90.8%;top:35.2%">2</span><span class="pin" style="left:93.2%;top:62.8%">3</span><figcaption>View full size</figcaption></figure>
         <div class="labels" aria-label="The seven reply categories and their next step">
@@ -323,7 +525,7 @@
     </article>
 
     <article class="decision" id="d4" aria-labelledby="d4t">
-      <header><h3 id="d4t"><span class="mark">4.</span> You can take the wheel in one click.</h3></header>
+      <header><h3 id="d4t"><span class="mark">4.</span> You can take the wheel in one click.</h3><p class="answers"><b>Answers the risk:</b> The manager can't tell who is in control, and taking over loses context.</p></header>
       <div class="screens">
         <figure class="shot" tabindex="0"><img src="img/takeover-rows.png" width="1650" height="358" alt="Sarah's Responses table: each reply with its channel, Auto or Manual mode, a status, and a Take Control or Exit Takeover action."><span class="pin" style="left:34.5%;top:44.7%">1</span><span class="pin" style="left:84.5%;top:28.5%">2</span><span class="pin" style="left:84.5%;top:44.4%">3</span><figcaption>View full size</figcaption></figure>
         <div class="seg" role="group" aria-label="Thread, first pass or final">
@@ -346,7 +548,7 @@
     </article>
 
     <article class="decision" id="d5" aria-labelledby="d5t">
-      <header><h3 id="d5t"><span class="mark">5.</span> Every campaign shows where Sarah is.</h3></header>
+      <header><h3 id="d5t"><span class="mark">5.</span> Every campaign shows where Sarah is.</h3><p class="answers"><b>Answers the risk:</b> Sarah works out of sight, so nobody trusts her output.</p></header>
       <div class="screens">
         <figure class="shot" tabindex="0"><img src="img/stage-tracker.png" width="1670" height="265" alt="Sarah's campaign overview: SaaS Founders Outreach, Active, with a six-stage tracker from Campaign Setup to Reporting."><span class="pin" style="left:5.4%;top:44%">1</span><span class="pin" style="left:41%;top:44%">2</span><span class="pin" style="left:58.8%;top:44%">3</span><figcaption>View full size</figcaption></figure>
         <figure class="shot" tabindex="0"><img src="img/d5-campaigns.png" width="2010" height="1115" alt="Sarah's campaign list: inbox limits, reply and bounce rates per sender, and every campaign with its status, prospects and responses."><span class="pin" style="left:49%;top:14.1%">4</span><span class="pin" style="left:40%;top:64.7%">5</span><figcaption>View full size</figcaption></figure>
@@ -362,32 +564,7 @@
         <p class="owner"><span class="tag">H1 System status</span>Six-stage tracker made with the PM after studying Apollo, Artisan and ZoomInfo</p>
       </div>
     </article>
-  </div>
-</section>
 
-<!-- HAND OFF -->
-<section class="stage" id="system" data-stage="4" data-voice="Talk to me, watch me, set me up." aria-labelledby="sys-title">
-  <div class="wrap">
-    <div class="head">
-      <h2 id="sys-title">Talk to her, watch her, set her up.</h2>
-      <p>Three places, each with one job. A manager never wonders where to look.</p>
-    </div>
-    <div class="zones">
-      <div><h3>Talk in chat</h3><ul><li>Create a campaign</li><li>Ask Sarah</li></ul></div>
-      <div class="mid"><h3>Watch the campaign</h3><ul><li>Overview</li><li>Prospects</li><li>Sequence</li><li>Responses</li><li>Metrics</li><li>Channels</li></ul></div>
-      <div><h3>Set up in configuration</h3><ul><li>Profile</li><li>Knowledge</li><li>CRM and email</li><li>Meeting link</li><li>Guardrails</li></ul></div>
-    </div>
-
-    <div class="block">
-      <h3>Each iteration made Sarah easier to trust</h3>
-      <p class="lede">First passes inside the design process, and where they ended.</p>
-      <div class="iters">
-        <div class="iter"><h3>Setup</h3><div class="pair"><div class="a">One long form</div><svg class="i"><use href="#i-arrow"/></svg><div class="b img"><img src="img/ob2.png" alt="Guided setup step from Sarah's onboarding."></div></div><div class="pairlab"><span class="f">First pass</span><span></span><span class="t">Four guided steps, about 7 minutes</span></div></div>
-        <div class="iter"><h3>CRM settings</h3><div class="pair"><div class="a img"><img src="img/d2-flat.png" alt="First pass: Make Default on every CRM row."></div><svg class="i"><use href="#i-arrow"/></svg><div class="b img"><img src="img/d2-grouped.png" alt="Final: grouped CRMs with one Default CRM."></div></div><div class="pairlab"><span class="f">Default on every row</span><span></span><span class="t">One Default CRM</span></div></div>
-        <div class="iter"><h3>Reply status</h3><div class="pair"><div class="a">Three types</div><svg class="i"><use href="#i-arrow"/></svg><div class="b img"><img src="img/d3-cycle3.png" alt="Seven action-led reply categories."></div></div><div class="pairlab"><span class="f">First pass</span><span></span><span class="t">Seven action-led categories</span></div></div>
-        <div class="iter"><h3>Thread</h3><div class="pair"><div class="a img"><img src="img/d4-compact.png" alt="First pass: one line per email."></div><svg class="i"><use href="#i-arrow"/></svg><div class="b img"><img src="img/d4-expanded.png" alt="Final: the full email with CC and attachments."></div></div><div class="pairlab"><span class="f">One line per email</span><span></span><span class="t">Full thread, CC, attachments</span></div></div>
-      </div>
-    </div>
 
     <div class="block">
       <h3>She wears Ruh's own system</h3>
@@ -397,6 +574,37 @@
         <ul class="checks" aria-label="Accessibility checks"><li>Status always in words</li><li>Text contrast 4.5:1 or more</li><li>Locked rules labelled</li><li>Continue stays off until valid</li><li>First-person, plain copy</li></ul>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- HAND OFF: how it comes together -->
+<section class="stage" id="works" data-stage="4" data-voice="Brief me in chat. I'll show you every step." aria-labelledby="works-title">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="works-title">Watch Sarah set up a campaign in one conversation.</h2>
+      <p>The five decisions, together in the chat she runs in. She asks, proposes, waits for your yes, then shows her work.</p>
+    </div>
+    <div class="walk">
+      <ol class="walksteps" id="walkSteps">
+        <li data-w="0"><span class="num">1</span><div><b>Sarah introduces herself and asks about your product.</b><span>A banner flags the setup that is still missing.</span><span class="tag">H1 System status</span></div></li>
+        <li data-w="1"><span class="num">2</span><div><b>She suggests campaign types. You answer in plain words.</b><span>No form to learn. The chat is the brief.</span></div></li>
+        <li data-w="2"><span class="num">3</span><div><b>She shows the plan as a table and waits for your yes.</b><span>Nothing runs until a person approves.</span><span class="tag">H3 User control</span></div></li>
+        <li data-w="3"><span class="num">4</span><div><b>She runs, shows the tool step, then reports what she saved.</b><span>Work in progress is never hidden.</span><span class="tag">H1 System status</span></div></li>
+        <li data-w="4"><span class="num">5</span><div><b>She asks for your ideal customer, with examples for every field.</b><span>Examples beat a blank box.</span><span class="tag">H6 Recognition</span></div></li>
+        <li data-w="5"><span class="num">6</span><div><b>She drafts the profile for you to accept or edit.</b><span>She proposes. You decide.</span></div></li>
+        <li data-w="6"><span class="num">7</span><div><b>Campaign setup stays pinned above the reply box.</b><span>Progress is one glance away: step 1 of 3.</span><span class="tag">H1 System status</span></div></li>
+      </ol>
+      <div class="chatframe">
+        <figure class="msg" data-w="0"><figcaption><span class="num">1</span>Sarah introduces herself and asks about your product.</figcaption><img src="img/chat1.jpg" width="2160" height="300" alt="Sarah's chat: the header with Chat, History and Campaign tabs, a Configuration required banner, and Sarah's opening line asking about your product." loading="lazy"></figure>
+        <figure class="msg" data-w="1"><figcaption><span class="num">2</span>She suggests campaign types. You answer in plain words.</figcaption><img src="img/chat2.jpg" width="1480" height="600" alt="Sarah suggests four campaign types and asks which to run. The user replies Lead Generation." loading="lazy"></figure>
+        <figure class="msg" data-w="2"><figcaption><span class="num">3</span>She shows the plan as a table and waits for your yes.</figcaption><img src="img/chat3.jpg" width="1480" height="720" alt="Sarah shows the campaign plan as a table and asks whether it looks correct. The user approves it." loading="lazy"></figure>
+        <figure class="msg" data-w="3"><figcaption><span class="num">4</span>She runs, shows the tool step, then reports what she saved.</figcaption><img src="img/chat4.jpg" width="1480" height="1200" alt="A tool card reads Executing SDR Management, Updating a campaign, then Campaign created successfully, followed by everything Sarah saved: details, goals, email setup and metrics." loading="lazy"></figure>
+        <figure class="msg" data-w="4"><figcaption><span class="num">5</span>She asks for your ideal customer, with examples for every field.</figcaption><img src="img/chat5.jpg" width="1480" height="640" alt="Sarah asks for the ideal customer profile, listing eight fields with examples for each." loading="lazy"></figure>
+        <figure class="msg" data-w="5"><figcaption><span class="num">6</span>She drafts the profile for you to accept or edit.</figcaption><img src="img/chat6.jpg" width="1480" height="380" alt="Sarah suggests an ideal customer profile: industry, region, roles, seniorities, locations, keywords and titles." loading="lazy"></figure>
+        <figure class="msg" data-w="6"><figcaption><span class="num">7</span>Campaign setup stays pinned above the reply box.</figcaption><img src="img/chat7.jpg" width="1480" height="290" alt="Campaign Setup, step 1 of 3, pinned above the Ask a follow up box." loading="lazy"></figure>
+      </div>
+    </div>
+    <p class="note">A sample conversation from my design file. The names and numbers inside it are placeholder data.</p>
   </div>
 </section>
 
@@ -441,6 +649,27 @@
       </ol>
       <p class="north">North star: qualified meetings per campaign. <span class="mark">Goal 10+ in 30 days.</span></p>
     </div>
+
+    <div class="block validate2" aria-labelledby="val-title">
+      <h3 id="val-title">What I'd validate next with real users</h3>
+      <p class="lede">What I'd test first now that teams use Sarah, and what would prove me right.</p>
+      <div class="vplan">
+        <div class="vcard"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-eye"/></svg></span><span class="vstat">Planned</span><b><span class="lin">Usability test.</span> Hire Sarah and launch a campaign</b><p>5 sales managers, moderated, thinking aloud. One task: get from Home to a live campaign.</p><em>Right if 4 of 5 finish setup alone, in about 7 minutes</em></div>
+        <div class="vcard"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-mic"/></svg></span><span class="vstat">Planned</span><b><span class="lin">Interviews.</span> What earns a manager's yes</b><p>6 to 8 sales managers and RevOps leads. What they check before approving a plan, and what makes them take over.</p><em>Right if the plan table answers their first questions</em></div>
+        <div class="vcard"><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-list"/></svg></span><span class="vstat">Planned</span><b><span class="lin">Task test.</span> Do reply categories say what to do?</b><p>Real reply examples, 10 participants. Pick the next step from Sarah's category alone.</p><em>Right if most pick the step Sarah would suggest</em></div>
+      </div>
+      <details class="sig"><summary>Signals I'd watch in the product</summary>
+      <ul class="vmetrics">
+        <li><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-okc"/></svg></span><b>Setup completion</b><span>Share of teams that finish all four steps</span></li>
+        <li><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg></span><b>Time to first live campaign</b><span>From Launch Sarah to Live</span></li>
+        <li><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-pen"/></svg></span><b>Plan edits before approval</b><span>High edits mean Sarah's drafts miss</span></li>
+        <li><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-swap"/></svg></span><b>Takeover rate</b><span>Healthy if steady, a warning if it climbs</span></li>
+        <li><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-sync"/></svg></span><b>CRM sync success</b><span>Leads that land without a retry</span></li>
+        <li><span class="ic" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-trend"/></svg></span><b>Month two renewal</b><span>The number the business cares about</span></li>
+      </ul>
+      </details>
+      <p class="note">Planned studies. None of these have been run yet, and the targets are mine.</p>
+    </div>
   </div>
 </section>
 
@@ -449,7 +678,7 @@
   <div class="wrap">
     <div class="head">
       <h2 id="crm-title">What Sarah taught me about CRM design.</h2>
-      <p>Every part of her maps to a CRM capability. Open any screen to see what it is and why it is there.</p>
+      <p>Every part of her maps to a CRM capability. Each row points to where you saw it.</p>
     </div>
     <div class="caps" id="caps"></div>
     <p class="notcovered">Not covered: deals, accounts, tasks, de-duplication.</p>
@@ -485,14 +714,14 @@
     </div>
   </div>
 </section>
-</main>
 
 <section class="end" aria-labelledby="end-title">
   <div class="wrap">
     <div>
       <h2 id="end-title">Thanks for meeting me.</h2>
-      <p>Sarah, Ruh's AI SDR. Designed by Nitin, sole product designer, with the PM and engineering.</p>
+      <p>Sarah, Ruh's AI SDR. Designed by Nitin, UX and product designer, with the PM and engineering.</p>
       <p class="synced"><i></i>Ava's lead is in your CRM.</p>
+      <p class="endcta"><a class="btn primary" href="https://www.linkedin.com/in/nitin-kumar-911126126/" target="_blank" rel="noopener">Connect on LinkedIn <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a><span>Happy to walk you through Sarah in person.</span></p>
     </div>
     <img src="img/sarah.png" width="265" height="414" alt="Sarah waving goodbye.">
   </div>
@@ -501,12 +730,12 @@
 
 <dialog class="lb" id="lb" aria-labelledby="lbTitle">
   <div class="lbin">
-    <div class="lbbar"><div><small id="lbCount"></small><b id="lbTitle"></b></div><button type="button" id="lbClose" aria-label="Close"><svg class="i"><use href="#i-x"/></svg></button></div>
+    <div class="lbbar"><div><small id="lbCount"></small><b id="lbTitle"></b></div><button type="button" id="lbClose" aria-label="Close"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button></div>
     <div class="lbimg"><img id="lbImg" src="img/d3-cycle3.png" alt="Full size product screen"></div>
-    <div class="lbcap"><p id="lbText"></p><div class="lbnav"><button type="button" id="lbPrev" aria-label="Previous screen"><svg class="i"><use href="#i-left"/></svg></button><button type="button" id="lbNext" aria-label="Next screen"><svg class="i"><use href="#i-right"/></svg></button></div></div>
+    <div class="lbcap"><p id="lbText"></p><div class="lbnav"><button type="button" id="lbPrev" aria-label="Previous screen"><svg class="i" aria-hidden="true"><use href="#i-left"/></svg></button><button type="button" id="lbNext" aria-label="Next screen"><svg class="i" aria-hidden="true"><use href="#i-right"/></svg></button></div></div>
   </div>
 </dialog>
 
-<script src="app.js" defer></script>
+<script src="app.js?v=23" defer></script>
 </body>
 </html>
